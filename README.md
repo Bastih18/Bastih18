@@ -19,6 +19,6 @@ And more... <br>
 ![Github stats](https://github-readme-stats.vercel.app/api?username=bastih18&show_icons=true&hide_border=true&count_private=true&include_all_commits=true)
 <br> <br>
 ✨ **All Time Stats** <br>
-<br><div>
+<div>
 <img height="300" src="https://wakatime.com/share/@6b3736a7-e0cc-4eb6-a55d-291a11d4e484/c59ba575-a1f4-46da-a9f4-da4f43e34a1d.png" />
 </div>
