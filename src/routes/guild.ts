@@ -1,8 +1,9 @@
 import {Application} from "express";
-import {getGuild, getGuildPreview} from '../controller/guild.controller';
+import {getGuild, getGuildMember, getGuildPreview} from '../controller/guild.controller';
 
 
 export default (baseUrl: string, app: Application) =>{
-    app.get(`${baseUrl}/:id`, getGuild);
-    app.get(`${baseUrl}/:id/preview`, getGuildPreview);
+    app.get(`${baseUrl}/:guildid`, getGuild);
+    app.get(`${baseUrl}/:guildid/preview`, getGuildPreview);
+    app.get(`${baseUrl}/:guildid/members/:userid`, getGuildMember)
 }

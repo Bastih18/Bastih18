@@ -13,7 +13,7 @@ export const getGuild = async (req: Request, res: Response) => {
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
 
    //request to discord
-   axios.get(guild.getGuild.replace("{guild.id}", req.params.id), {
+   axios.get(guild.getGuild.replace("{guild.id}", req.params.guildid), {
       headers: {
          Authorization: `Bot ${process.env.TOKEN}`
       }
@@ -32,13 +32,36 @@ export const getGuildPreview = async (req: Request, res: Response) => {
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
-   axios.get(guild.getGuildPreview.replace("{guild.id}", req.params.id), {
+   axios.get(guild.getGuildPreview.replace("{guild.id}", req.params.guildid), {
       headers: {
          Authorization: `Bot ${process.env.TOKEN}`
       }
    })
    .then((response) => {
       //send response
+      res.status(response.status).send(body(response.data, response.status));
+      //TODO StatusHandler that checks specific status and run's ticket system
+
+   }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
+
+}
+
+export const getGuildMember = async (req: Request, res: Response) => {
+
+   //Validating given guild.id
+   console.log(req.params);
+   
+   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   
+   //request to discord
+   axios.get((guild.getGuildMember).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
+      headers: {
+         Authorization: `Bot ${process.env.TOKEN}`
+      }
+   })
+   .then((response) => {
+      //send response      
       res.status(response.status).send(body(response.data, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
