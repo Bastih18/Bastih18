@@ -11,13 +11,15 @@ export const getGuild = async (req: Request, res: Response) => {
    const { error }: Joi.ValidationResult = getGuildValidation(req.params);
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
 
+   //request to discord
    axios.get("https://discord.com/api/guilds/" + req.params.id, {
       headers: {
-         Authorization: `Bearer ${process.env.TOKEN}`
+         Authorization: `Bot ${process.env.TOKEN}`
       }
    }).then((response) => {
-      console.log(response);
+      //send response
       res.status(response.status).send(body(response.data, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
+
    }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
 }

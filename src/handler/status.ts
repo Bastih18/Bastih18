@@ -1,7 +1,7 @@
 
 /**
  * creates the default body for error response messages
- * @param {string} message
+ * @param {Object} message
  * @param {number} status
  */
 export const body = (message: Object, status: number) => {
