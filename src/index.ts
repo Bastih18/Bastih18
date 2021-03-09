@@ -4,6 +4,10 @@ import logger from './utils/log/logger';
 
 dotenv.config();
 
+//Routes
+
+import guildRoute from "./routes/guild";
+
 const app: Application = express();
 const NAMESPACE = 'Server';
 
@@ -11,5 +15,6 @@ const NAMESPACE = 'Server';
 app.use(express.json());
 
 // Routes
+guildRoute("/guilds", app);
 
 app.listen(process.env.PORT, () => logger.info(NAMESPACE, `Up and running on port ${process.env.PORT}`));
