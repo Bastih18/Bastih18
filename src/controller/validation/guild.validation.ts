@@ -2,8 +2,8 @@ import Joi, {Schema} from '@hapi/joi';
 
 
 /**
- *
- * @param 
+ *  Validation for Discord Guild
+ * @param data
  */
 export const getGuildValidation = (data: Object) => {
 
