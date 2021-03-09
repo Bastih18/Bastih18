@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {getGuildValidation} from './validation/guild.validation';
+import {getGuildMemberValidation, getGuildValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
@@ -48,10 +48,8 @@ export const getGuildPreview = async (req: Request, res: Response) => {
 
 export const getGuildMember = async (req: Request, res: Response) => {
 
-   //Validating given guild.id
-   console.log(req.params);
-   
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
+   //Validating given guild.id and member.id
+   const { error }: Joi.ValidationResult = getGuildMemberValidation(req.params);
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
