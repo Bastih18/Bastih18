@@ -1,11 +1,19 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {getGuildValidation} from './validation/guild.validation';
+import {getGuildMemberValidation, getGuildValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
 
-
+/**
+ * return's the discord server guild.
+ * It's only accessible, when out Bot joined the Server
+ *
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
 export const getGuild = async (req: Request, res: Response) => {
 
     //Validating given guild.id
@@ -25,10 +33,20 @@ export const getGuild = async (req: Request, res: Response) => {
    }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
 }
 
+/**
+ * return's a preview of a discord guild.
+ * It has less information than the guild endpoint.
+ * It's only accessible, when out Bot joined the Server
+ *
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
 export const getGuildPreview = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
+   const { error }: Joi.ValidationResult = getGuildMemberValidation(req.params);
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
@@ -46,6 +64,17 @@ export const getGuildPreview = async (req: Request, res: Response) => {
 
 }
 
+/**
+ * return's a guild member. You first define the guild (Server)
+ * over the guild.id and than search a member with the member.id
+ *
+ * The member object has the user object in it.
+ *
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
 export const getGuildMember = async (req: Request, res: Response) => {
 
    //Validating given guild.id
