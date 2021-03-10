@@ -1,5 +1,5 @@
 import {Application} from "express";
-import {getGuild, getGuildChannels, getGuildPreview} from '../controller/guild.controller';
+import {getGuild, getGuildMember, getGuildPreview} from '../controller/guild.controller';
 
 /**
  * 
@@ -10,7 +10,7 @@ import {getGuild, getGuildChannels, getGuildPreview} from '../controller/guild.c
  */
 
 export default (baseUrl: string, app: Application) =>{
-    app.get(`${baseUrl}/:id`, getGuild);
-    app.get(`${baseUrl}/:id/preview`, getGuildPreview);
-    app.get(`${baseUrl}/:id/channels`, getGuildChannels)
+    app.get(`${baseUrl}/:guildid`, getGuild);
+    app.get(`${baseUrl}/:guildid/preview`, getGuildPreview);
+    app.get(`${baseUrl}/:guildid/members/:userid`, getGuildMember)
 }
