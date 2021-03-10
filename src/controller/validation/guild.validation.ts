@@ -2,8 +2,10 @@ import Joi, {Schema} from '@hapi/joi';
 
 
 /**
- *  Validation for Discord Guild
- * @param data
+ * Validation for Discord Guild
+ * @param {Object} data
+ *
+ * @alpha
  */
 export const getGuildValidation = (data: Object) => {
 
@@ -14,6 +16,12 @@ export const getGuildValidation = (data: Object) => {
     return schema.validate(data);
 }
 
+/**
+ * Validation for Discord Guild Member
+ * @param {Object} data
+ *
+ * @alpha
+ */
 export const getGuildMemberValidation = (data: Object) => {
 
     // checking if both IDs are Strings 
