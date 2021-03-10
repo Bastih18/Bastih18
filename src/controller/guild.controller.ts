@@ -46,7 +46,7 @@ export const getGuild = async (req: Request, res: Response) => {
 export const getGuildPreview = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildMemberValidation(req.params);
+   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
