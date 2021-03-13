@@ -95,3 +95,32 @@ export const getGuildMember = async (req: Request, res: Response) => {
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
 
 }
+
+/**
+ * return's channels of a guild. You just define the guild.
+ * 
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
+ export const getGuildChannels = async (req: Request, res: Response) => {
+
+   //Validating given guild.id
+   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   
+   //request to discord
+   axios.get((guild.getGuildChannels).replace("{guild.id}", req.params.guildid), {
+      headers: {
+         Authorization: `Bot ${process.env.TOKEN}`
+      }
+   })
+   .then((response) => {
+      //send response      
+      res.status(response.status).send(body(response.data, response.status));
+      //TODO StatusHandler that checks specific status and run's ticket system
+
+   }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
+
+}
