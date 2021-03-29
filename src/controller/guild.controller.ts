@@ -4,7 +4,7 @@ import {getGuildMemberValidation, getGuildValidation, removeGuildMemberRoleValid
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
-import fetch from 'node-fetch';
+import fetch from 'node-fetch'
 
 /**
  * return's the discord server guild.
@@ -156,7 +156,6 @@ export const getGuildPreview = async (req: Request, res: Response) => {
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
-
    
    }
 
@@ -168,6 +167,25 @@ export const getGuildPreview = async (req: Request, res: Response) => {
    
    //request to discord
    fetch((guild.removeGuildMemberRole).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid).replace("{role.id}", req.params.roleid), {
+   });
+   }
+
+/**
+ * kicks a Meber from a guild.
+ * 
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
+ export const removeGuildMember = async (req: Request, res: Response) => {
+
+   //Validating given guild.id
+   const { error }: Joi.ValidationResult = getGuildMemberValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   
+   //request to discord
+   fetch((guild.removeGuildMember).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
       "headers": {
          "Content-Type": "application/json",
          "Authorization": `Bot ${process.env.TOKEN}`
@@ -184,3 +202,5 @@ export const getGuildPreview = async (req: Request, res: Response) => {
       
       res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
    }
+
+}
