@@ -49,3 +49,19 @@ export const getGuildMemberValidation = (data: Object) => {
     return schema.validate(data);
 }
 
+/**
+* Validation for Adding Role to a Discord Guild Member
+* @param {Object} data
+*
+* @alpha
+*/
+export const addGuildMemberRoleValidation = (data: Object) => {
+
+    // checking if both IDs are Strings 
+    const schema: Schema = Joi.object({
+        guildid: Joi.string().required(),
+        userid: Joi.string().required(),
+        roleid: Joi.string().required()
+     });
+    return schema.validate(data);
+ }
