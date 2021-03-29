@@ -1,5 +1,5 @@
 import {Application} from "express";
-import {getGuild, getGuildMember, getGuildChannels, getGuildMembers, getGuildPreview, removeGuildMember} from '../controller/guild.controller';
+import {getGuild, getGuildMember, getGuildChannels, getGuildMembers, getGuildPreview, removeGuildMember, removeGuildMemberRole} from '../controller/guild.controller';
 
 /**
  * 
@@ -15,5 +15,6 @@ export default (baseUrl: string, app: Application) =>{
     app.get(`${baseUrl}/:guildid/members/:userid`, getGuildMember)
     app.get(`${baseUrl}/:guildid/channels`, getGuildChannels)
     app.get(`${baseUrl}/:guildid/members`, getGuildMembers)
+    app.delete(`${baseUrl}/:guildid/members/:userid/roles/:roleid`, removeGuildMemberRole)
     app.delete(`${baseUrl}/:guildid/members/:userid`, removeGuildMember)
 }
