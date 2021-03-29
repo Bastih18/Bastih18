@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {getGuildMemberValidation, getGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
+import {addGuildMemberRoleValidation, getGuildMemberValidation, getGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
