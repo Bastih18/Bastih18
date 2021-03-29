@@ -65,3 +65,22 @@ export const addGuildMemberRoleValidation = (data: Object) => {
      });
     return schema.validate(data);
  }
+
+ /**
+ * Validation for Modify Discord Guild Member
+ * @param {Object} data
+ *
+ * @alpha
+ */
+  export const modifyGuildMemberValidation = (data: Object) => {
+
+    // checking if both IDs are Strings 
+    const schema: Schema = Joi.object({
+        nick: Joi.string(),
+        roles: Joi.string(),
+        mute: Joi.boolean(),
+        channel_id: Joi.string()
+    });
+    return schema.validate(data);
+ }
+ 

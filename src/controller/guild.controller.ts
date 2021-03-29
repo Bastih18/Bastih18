@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {addGuildMemberRoleValidation, getGuildMemberValidation, getGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
+import {addGuildMemberRoleValidation, getGuildMemberValidation, getGuildValidation, modifyGuildMemberValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
@@ -295,4 +295,39 @@ export const removeGuildMember = async (req: Request, res: Response) => {
       console.log(err);
       
       res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
+}
+
+export const modifyGuildMember = async (req: Request, res: Response) => {
+
+   //Validating given guild.id and member.id
+   const { error }: Joi.ValidationResult = getGuildMemberValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+
+
+   {
+      const { error }: Joi.ValidationResult = modifyGuildMemberValidation(req.body);
+      if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+
+   }
+
+   
+   //request to discord
+   fetch((guild.modifyGuildMember).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "PATCH",
+      "body": JSON.stringify(req.body)
+   })
+   .then((response) => {
+      //send response      
+      res.status(response.status).send(body(response.statusText, response.status));
+      //TODO StatusHandler that checks specific status and run's ticket system
+
+   }).catch((err) => {
+      console.log(err);
+      
+      res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
+
 }
