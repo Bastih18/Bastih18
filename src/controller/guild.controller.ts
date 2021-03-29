@@ -259,3 +259,40 @@ export const removeGuildMember = async (req: Request, res: Response) => {
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
 
 }
+
+/**
+ * adds a role to a guild member. You first define the guild (Server)
+ * over the guild.id and than search a member with the member.id
+ * and then you define a roleid with the role.id
+ *
+ * The member object has the user object in it.
+ *
+ * @param {Request} req
+ * @param {Response} res
+ *
+ * @alpha
+ */
+ export const addGuildMemberRole = async (req: Request, res: Response) => {
+
+   //Validating given guild.id and member.id and role.id
+   const { error }: Joi.ValidationResult = addGuildMemberRoleValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   
+   //request to discord
+   fetch((guild.addGuildMemberRole).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid).replace("{role.id}", req.params.roleid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "PUT",
+   })
+   .then((response) => {
+      //send response      
+      res.status(response.status).send(body(response.statusText, response.status));
+      //TODO StatusHandler that checks specific status and run's ticket system
+  
+   }).catch((err) => {
+      console.log(err);
+      
+      res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
+}

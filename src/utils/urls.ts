@@ -7,6 +7,7 @@ export const guild = {
     getGuildMembers: discordApi+"/guilds/{guild.id}/members",
     getGuildBan: discordApi+"/guilds/{guild.id}/bans/{user.id}",
     getGuildBans: discordApi+"/guilds/{guild.id}/bans",
+    addGuildMemberRole: discordApi+"/guilds/{guild.id}/members/{user.id}/roles/{role.id}",
     removeGuildMemberRole: discordApi+"/guilds/{guild.id}/members/{user.id}/roles/{role.id}",
     removeGuildMember: discordApi+"/guilds/{guild.id}/members/{user.id}"
 }
