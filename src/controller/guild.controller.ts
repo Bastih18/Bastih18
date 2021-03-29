@@ -1,9 +1,10 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {getGuildMemberValidation, getGuildValidation} from './validation/guild.validation';
+import {getGuildMemberValidation, getGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
 import axios from 'axios';
 import {guild} from '../utils/urls';
+import fetch from 'node-fetch';
 
 /**
  * return's the discord server guild.
@@ -156,4 +157,30 @@ export const getGuildPreview = async (req: Request, res: Response) => {
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
 
-}
+   
+   }
+
+   export const removeGuildMemberRole = async (req: Request, res: Response) => {
+
+   //Validating guildId, memberId and RoleId
+   const { error }: Joi.ValidationResult = removeGuildMemberRoleValidation(req.params);
+   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   
+   //request to discord
+   fetch((guild.removeGuildMemberRole).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid).replace("{role.id}", req.params.roleid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "DELETE",
+   })
+   .then((response) => {
+      //send response      
+      res.status(response.status).send(body(response.statusText, response.status));
+      //TODO StatusHandler that checks specific status and run's ticket system
+  
+   }).catch((err) => {
+      console.log(err);
+      
+      res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
+   }
