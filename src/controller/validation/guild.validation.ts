@@ -84,3 +84,19 @@ export const addGuildMemberRoleValidation = (data: Object) => {
     return schema.validate(data);
  }
  
+
+ /**
+ * Validation for 
+ * @param {Object} data
+ *
+ * @alpha
+ */
+  export const createGuildBan = (data: Object) => {
+
+    // checking if both IDs are Strings 
+    const schema: Schema = Joi.object({
+        days: Joi.string(),
+        reason: Joi.string(),
+    });
+    return schema.validate(data);
+ }
