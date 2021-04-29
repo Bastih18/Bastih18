@@ -2,18 +2,13 @@ import Joi, {Schema} from '@hapi/joi';
 
 
 /**
- * Validation for Discord Guild
+ * Validation for Discord Guild ID
  * @param {Object} data
  *
  * @alpha
  */
- export const getGuildValidation = (data: Object) => {
-
-    // checking if ID is a String 
-    const schema: Schema = Joi.object({
-        guildid: Joi.string().required()
-    })
-    return schema.validate(data);
+export const getGuildIdValidation = (guildid: string) => {
+    return !(/^([0-9]{15})/.test(guildid))
 }
 
 /**

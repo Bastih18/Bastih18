@@ -1,8 +1,7 @@
 import {Request, Response} from 'express';
 import Joi from "@hapi/joi";
-import {addGuildMemberRoleValidation, createGuildChannelValidation, createGuildRoleValidation, getGuildMemberValidation, getGuildRoleValidation, getGuildValidation, modifyGuildChannelPositionsValidation, modifyGuildMemberValidation, modifyGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
+import {addGuildMemberRoleValidation, createGuildChannelValidation, createGuildRoleValidation, getGuildMemberValidation, getGuildRoleValidation, getGuildIdValidation, modifyGuildChannelPositionsValidation, modifyGuildMemberValidation, modifyGuildValidation, removeGuildMemberRoleValidation} from './validation/guild.validation';
 import {body} from '../handler/status';
-import axios from 'axios';
 import {guild} from '../utils/urls';
 import fetch from 'node-fetch'
 
@@ -18,20 +17,31 @@ import fetch from 'node-fetch'
 export const getGuild = async (req: Request, res: Response) => {
 
     //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+    const error = getGuildIdValidation(req.params.guildid);
+    if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
    //request to discord
-   axios.get((guild.getGuild).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
-   }).then((response) => {
-      //send response
-      res.status(response.status).send(body(response.data, response.status));
+   fetch((guild.getGuild).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
+   })
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
-
-   }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
+  
+   }).catch((err) => {
+      console.log(err);
+      
+      res.status(500).send(body("Something didn't work. Error => "+ err, 500))})
 }
 
 /**
@@ -47,18 +57,25 @@ export const getGuild = async (req: Request, res: Response) => {
 export const getGuildPreview = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
    
    //request to discord
-   axios.get((guild.getGuildPreview).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildPreview).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {
-      //send response
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -69,8 +86,8 @@ export const getGuildPreview = async (req: Request, res: Response) => {
 export const modifyGuild = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
  {
    //Validating given Arguments
@@ -110,18 +127,25 @@ export const modifyGuild = async (req: Request, res: Response) => {
  export const getGuildChannels = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);   
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
    
    //request to discord
-   axios.get((guild.getGuildChannels).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildChannels).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -132,8 +156,8 @@ export const modifyGuild = async (req: Request, res: Response) => {
 export const createGuildChannel = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
    
    {
       //Validating given Arguments
@@ -164,8 +188,8 @@ export const createGuildChannel = async (req: Request, res: Response) => {
 export const modifyGuildChannelPositions = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
    
    {
       //Validating given Arguments
@@ -211,14 +235,21 @@ export const modifyGuildChannelPositions = async (req: Request, res: Response) =
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
-   axios.get((guild.getGuildMember).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildMember).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -238,20 +269,25 @@ export const modifyGuildChannelPositions = async (req: Request, res: Response) =
  export const getGuildMembers = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
    //request to discord
-   axios.get((guild.getGuildMembers).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildMembers).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-
-   .then((response) => {
-
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -399,18 +435,25 @@ export const removeGuildMember = async (req: Request, res: Response) => {
  export const getGuildBans = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
    
    //request to discord
-   axios.get((guild.getGuildBans).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildBans).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -432,14 +475,21 @@ export const removeGuildMember = async (req: Request, res: Response) => {
    if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
    
    //request to discord
-   axios.get((guild.getGuildBan).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildBan).replace("{guild.id}", req.params.guildid).replace("{user.id}", req.params.userid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {      
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -506,18 +556,25 @@ export const removeGuildBan = async (req: Request, res: Response) => {
 export const getGuildRoles = async (req: Request, res: Response) => {
 
    //Validating given guild.id and member.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
    //request to discord
-   axios.get((guild.getGuildRoles).replace("{guild.id}", req.params.guildid), {
-      headers: {
-         Authorization: `Bot ${process.env.TOKEN}`
-      }
+   fetch((guild.getGuildRoles).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
    })
-   .then((response) => {
-      //send response      
-      res.status(response.status).send(body(response.data, response.status));
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
       //TODO StatusHandler that checks specific status and run's ticket system
 
    }).catch(err => res.status(500).send(body("Something didn't work. Error => "+ err, 500)))
@@ -526,8 +583,8 @@ export const getGuildRoles = async (req: Request, res: Response) => {
 export const createGuildRole = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
 
    {
@@ -561,8 +618,8 @@ export const createGuildRole = async (req: Request, res: Response) => {
 export const modifyGuildRolePositions = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-   const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-   if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
 
    {
@@ -653,17 +710,25 @@ export const deleteGuildRole = async (req: Request, res: Response) => {
 export const getGuildVoiceRegions = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-  const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-  if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
   //request to discord
-  axios.get((guild.getGuildVoiceRegions).replace("{guild.id}", req.params.guildid), {
-     headers: {
-        Authorization: `Bot ${process.env.TOKEN}`
-     }
-  }).then((response) => {
-     //send response
-     res.status(response.status).send(body(response.data, response.status));
+  fetch((guild.getGuildVoiceRegions).replace("{guild.id}", req.params.guildid), {
+      "headers": {
+         "Content-Type": "application/json",
+         "Authorization": `Bot ${process.env.TOKEN}`
+      },
+      "method": "GET",
+   })
+   .then(async (response) => {
+      
+      //get Data from response
+      let responseData = response.json()
+      await responseData.then(json => responseData = json)
+      
+      //send response        
+      res.status(response.status).send(body(responseData, response.status));
      //TODO StatusHandler that checks specific status and run's ticket system
 
   }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
@@ -672,17 +737,25 @@ export const getGuildVoiceRegions = async (req: Request, res: Response) => {
 export const getGuildInvites = async (req: Request, res: Response) => {
 
    //Validating given guild.id
-  const { error }: Joi.ValidationResult = getGuildValidation(req.params);
-  if(error) return res.status(400).send(body(error.details[0].message.toString(), 400));
+   const error = getGuildIdValidation(req.params.guildid);
+   if(error) return res.status(400).send(body("The GuildId must be a Number with a minimum length of 15.", 400));
 
   //request to discord
-  axios.get((guild.getGuildInvites).replace("{guild.id}", req.params.guildid), {
-     headers: {
-        Authorization: `Bot ${process.env.TOKEN}`
-     }
-  }).then((response) => {
-     //send response
-     res.status(response.status).send(body(response.data, response.status));
+  fetch((guild.getGuildInvites).replace("{guild.id}", req.params.guildid), {
+   "headers": {
+      "Content-Type": "application/json",
+      "Authorization": `Bot ${process.env.TOKEN}`
+   },
+   "method": "GET",
+})
+.then(async (response) => {
+   
+   //get Data from response
+   let responseData = response.json()
+   await responseData.then(json => responseData = json)
+   
+   //send response        
+   res.status(response.status).send(body(responseData, response.status));
      //TODO StatusHandler that checks specific status and run's ticket system
 
   }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
