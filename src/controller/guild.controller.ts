@@ -760,3 +760,4 @@ export const getGuildInvites = async (req: Request, res: Response) => {
 
   }).catch(err => res.status(500).send(body("Something didn't work. Error => " + err, 500)))
 }
+
