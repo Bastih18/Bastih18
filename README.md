@@ -25,7 +25,7 @@ And more... <br>
 <br>
 
 ✨ **Github Stats** <br>
-![Github stats](https://github-readme-stats.vercel.app/api?username=bastih18&show_icons=true&hide_border=true&count_private=true&include_all_commits=true)
+![Github stats](https://github-readme-stats.vercel.app/api?username=bastih18&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=ffffff00)
 <br> <br>
 ✨ **All Time Stats** <br>
 <div>
