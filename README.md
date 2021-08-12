@@ -11,7 +11,6 @@ I'm 16 years old, and I live in germany.
 <a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner <br>
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
 <a href="https://simplecraft.eu">Simplecraft </a> - Owner <br>
-<a href="https://hamibot.io">Hamibot </a>- Developer <br>
 And more... <br>
 <br>
 
