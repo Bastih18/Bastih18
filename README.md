@@ -10,11 +10,12 @@ I'm 17 years old, and I'm living in germany.
 ✨ **My Jobs / Sites** <br>
 <a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner <br>
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
-<a href="https://simplecraft.eu">Simplecraft </a> - Owner <br>
+<a href="https://society-rp.de">Society RP</a> - Head Developer <br>
+<a href="https://minevalley.eu">MineValley </a> - Developer <br>
 And more... <br>
 <br>
 
-### Spotify Playing 🎧
+### Currently listening to 🎧
 
 [<img src="https://spotify-bastih18.vercel.app/api/spotify" alt="Basti's Spotify Playing" width="350" />](https://open.spotify.com/user/bastilp0405)
 
