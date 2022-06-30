@@ -18,7 +18,7 @@ And more... <br>
 
 ### Spotify 🎧
 
-[<img src="https://spotify-bastih18.vercel.app/api/spotify" alt="Basti's Spotify Playing" width="350" />](https://open.spotify.com/user/bastilp0405)
+[<img src="https://spotify-bastih18.vercel.app/api/spotify?background_color=8b0000" alt="Basti's Spotify Playing" width="350" />](https://open.spotify.com/user/bastilp0405)
 
 ✨ **Languages / Frameworks** <br>
 <img src="https://img.shields.io/badge/-HTML-blue?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/-PHP-blue?style=for-the-badge&logo=PHP&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVASCRIPT-blue?style=for-the-badge&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/-MYSQL-blue?style=for-the-badge&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/-MARIADB-blue?style=for-the-badge&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVA-blue?style=for-the-badge&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/-NODE.JS-blue?style=for-the-badge&logo=node.js&logoColor=white"/>
