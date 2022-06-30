@@ -32,5 +32,3 @@ And more... <br>
 <div>
 <img height="300" src="https://wakatime.com/share/@6b3736a7-e0cc-4eb6-a55d-291a11d4e484/c59ba575-a1f4-46da-a9f4-da4f43e34a1d.png" />
 </div>
-
-date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
