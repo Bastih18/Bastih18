@@ -16,7 +16,7 @@ Discord Bots<br>
 And more... <br>
 <br>
 
-### Currently listening to 🎧
+### Spotify 🎧
 
 [<img src="https://spotify-bastih18.vercel.app/api/spotify" alt="Basti's Spotify Playing" width="350" />](https://open.spotify.com/user/bastilp0405)
 
