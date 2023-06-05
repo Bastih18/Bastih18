@@ -4,11 +4,12 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
 
 ✨ **About me** <br>
-I'm 18 years old, and I'm living in germany.
+18 year old guy from Germany
 <br>
 <br>
 ✨ **My Jobs / Sites** <br>
-<a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner <br>
+<a href="https://pixelvault.co">PixelVault </a> - Owner & Developer
+<a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner <br> | Discontinued
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
 <a href="https://society-rp.de">Society RP</a> - Head Developer <br>
 <a href="https://minevalley.eu">MineValley </a> - Developer <br>
