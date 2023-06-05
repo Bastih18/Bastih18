@@ -8,8 +8,8 @@
 <br>
 <br>
 ✨ **My Jobs / Sites** <br>
-<a href="https://pixelvault.co">PixelVault </a> - Owner & Developer
-<a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner <br> | Discontinued
+<a href="https://pixelvault.co">PixelVault </a> - Owner & Developer <br>
+<a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner | Discontinued <br>
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
 <a href="https://society-rp.de">Society RP</a> - Head Developer <br>
 <a href="https://minevalley.eu">MineValley </a> - Developer <br>
