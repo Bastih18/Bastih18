@@ -1,5 +1,7 @@
 <h2> Hi there, I'm Basti! </h2>
 
+[![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
+
 [![Website](https://img.shields.io/website?label=bastih18.dev&style=for-the-badge&url=https%3A%2F%2Fbastih18.dev)](https://bastih18.dev)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
 
@@ -16,10 +18,6 @@
 Discord Bots<br>
 And more... <br>
 <br>
-
-### Spotify 🎧
-
-[<img src="https://spotify-bastih18.vercel.app/api/spotify?background_color=0d1117" alt="Basti's Spotify Playing" width="350" />](https://open.spotify.com/user/bastilp0405)
 
 ✨ **Languages / Frameworks** <br>
 <img src="https://img.shields.io/badge/-HTML-blue?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/-PHP-blue?style=for-the-badge&logo=PHP&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVASCRIPT-blue?style=for-the-badge&logo=javascript&logoColor=white"/> <img src="https://img.shields.io/badge/-MYSQL-blue?style=for-the-badge&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/-MARIADB-blue?style=for-the-badge&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/-JAVA-blue?style=for-the-badge&logo=java&logoColor=white"/> <img src="https://img.shields.io/badge/-NODE.JS-blue?style=for-the-badge&logo=node.js&logoColor=white"/>
