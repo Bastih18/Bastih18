@@ -1,9 +1,9 @@
 <h2> Hi there, I'm Basti! </h2>
 
-[![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
-
 [![Website](https://img.shields.io/website?label=bastih18.dev&style=for-the-badge&url=https%3A%2F%2Fbastih18.dev)](https://bastih18.dev)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
+
+[![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
 ✨ **About me** <br>
 18 year old guy from Germany
