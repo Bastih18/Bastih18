@@ -16,7 +16,6 @@
 <a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner | Discontinued <br>
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
 <a href="https://society-rp.de">Society RP</a> - Head Developer <br>
-<a href="https://minevalley.eu">MineValley </a> - Developer <br>
 Discord Bots<br>
 And more... <br>
 <br>
