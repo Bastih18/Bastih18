@@ -1,14 +1,14 @@
-<h2> Hi there, I'm Basti! </h2>
+<h2> Hi there, welcome on my GitHub Profile. </h2>
 
 [![Website](https://img.shields.io/website?label=bastih18.dev&style=for-the-badge&url=https%3A%2F%2Fbastih18.dev)](https://bastih18.dev)
 [![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
 
 ## ✨ **My Discord** <br>
-
 [![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
 ## ✨ **About me** <br>
-I'm 19 years old, living in Germany. I'm a hobby developer and gamer for 7+ years now.
+Hello, I'm Basti, a 19-year-old developer from Germany. <br>
+🎮 Gaming Since 2015 🕹️ | 💻 Programming Since 2017 🚀
 <br>
 <br>
 ## ✨ **My Jobs / Projects / Sites** <br>
@@ -17,9 +17,9 @@ I'm 19 years old, living in Germany. I'm a hobby developer and gamer for 7+ year
 <a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner | Discontinued <br>
 Discord Bots<br>
 APIs, Programs<br>
-And more... <br>
+And more... 
 <br>
-
+<br>
 ## ✨ **Languages / Frameworks I use** <br>
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
@@ -36,7 +36,6 @@ And more... <br>
 ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 <br>
 <br>
-
 ## ✨ **OS / Programs / Apps I use** <sub>(only a few of them)</sub> <br>
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
@@ -76,12 +75,12 @@ And more... <br>
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-
-<br> <br>
-
+<br> 
+<br>
 ## ✨ **Github Stats** <br>
 ![Github stats](https://github-readme-stats.vercel.app/api?username=bastih18&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=ffffff00&hide_title=true)
-<br> <br>
+<br> 
+<br>
 ## ✨ **All Time Stats** <br>
 <div>
 <img height="300" src="https://wakatime.com/share/@6b3736a7-e0cc-4eb6-a55d-291a11d4e484/c59ba575-a1f4-46da-a9f4-da4f43e34a1d.png" />
