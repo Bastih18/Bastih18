@@ -16,7 +16,7 @@ I'm 19 years old, living in Germany. I'm a hobby developer and gamer for 7+ year
 <a href="https://luax.xyz">LuaX </a> - Owner <br>
 <a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner | Discontinued <br>
 Discord Bots<br>
-APIs, Programs
+APIs, Programs<br>
 And more... <br>
 <br>
 
