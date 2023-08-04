@@ -37,7 +37,7 @@ And more... <br>
 <br>
 <br>
 
-## ✨ **OS / Programs / Apps I use** <br>
+## ✨ **OS / Programs / Apps I use** (only a few of them) <br>
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 ![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
 ![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
