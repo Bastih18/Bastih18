@@ -8,7 +8,7 @@
 [![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
 ✨ **About me** <br>
-18 year old Developer from Germany
+19 year old Developer from Germany
 <br>
 <br>
 ✨ **My Jobs / Sites** <br>
