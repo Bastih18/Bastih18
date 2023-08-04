@@ -8,7 +8,7 @@
 [![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
 ✨ **About me** <br>
-I'm 19 years old, living in Germany, I'm a hobby Developer, and Gamer for 7+ Years now.
+I'm 19 years old, living in Germany. I'm a hobby developer and gamer for 7+ years now.
 <br>
 <br>
 ✨ **My Jobs / Sites** <br>
