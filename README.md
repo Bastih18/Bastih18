@@ -4,7 +4,7 @@
 [![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
 
 ## ✨ **My Discord** <br>
-[![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
+[![Discord Presence](https://lanyard.cnrad.dev/api/345671174220677122)](https://discord.com/users/345671174220677122)
 
 ## ✨ **About me** <br>
 Hello, I'm Basti, a 19-year-old developer from Germany. <br>
