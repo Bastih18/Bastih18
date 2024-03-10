@@ -47,5 +47,11 @@
 
 ###
 
+<br>
+
+## ✨ **All Time Stats** <br>
+<div>
+<img src="https://wakatime.com/share/@6b3736a7-e0cc-4eb6-a55d-291a11d4e484/9d1f1a51-b648-4bbe-9008-d79ebc1444a7.png" />
+</div>
 
 ###
