@@ -3,10 +3,20 @@
 ###
 
 <div align="center">
+  <img height="200" src="https://camo.githubusercontent.com/0fcd2928ca62665e5bf6bb1bc9ce40952c9e87144e77f56bf1da345a2d1019b9/68747470733a2f2f6c616e796172642e636e7261642e6465762f6170692f323733373937313530383830353633323031"  />
+</div>
+
+###
+
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=bastih18&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true" height="150" alt="stats graph"  />
   <img src="https://streak-stats.demolab.com?user=bastih18&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=bastih18&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true" height="150" alt="languages graph"  />
 </div>
+
+###
+
+<img align="right" height="150" src="https://avatars.githubusercontent.com/u/39469401?s=2048"  />
 
 ###
 
@@ -43,10 +53,6 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="30" alt="docker logo"  />
 </div>
-
-###
-
-<img align="right" height="150" src="https://avatars.githubusercontent.com/u/39469401?s=2048"  />
 
 ###
 
