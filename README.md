@@ -7,7 +7,7 @@
 [![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
 ## ✨ **About me** <br>
-Hello, I'm Basti, a 19-year-old developer from Germany. <br>
+Hello, I'm Basti, a 20-year-old developer from Germany. <br>
 🎮 Gaming Since 2015 🕹️ | 💻 Programming Since 2017 🚀
 <br>
 <br>
