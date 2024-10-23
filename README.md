@@ -1,90 +1,100 @@
-<h2> Hi there, welcome on my GitHub Profile. </h2>
+<h2> Hi there, welcome to my GitHub Profile! </h2>
 
-[![Website](https://img.shields.io/website?label=bastih18.dev&style=for-the-badge&url=https%3A%2F%2Fbastih18.dev)](https://bastih18.dev)
-[![Twitter Follow](https://img.shields.io/twitter/follow/bastih18?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fgithub.com%2FBastih18&screen_name=Bastih18)
+[![Website](https://img.shields.io/badge/Website-bastih18.dev-3CCF91?style=for-the-badge&logo=Google%20Chrome&logoColor=white)](https://bastih18.dev)
 
 ## ✨ **My Discord** <br>
 [![Discord Presence](https://lanyard.cnrad.dev/api/273797150880563201)](https://discord.com/users/273797150880563201)
 
-## ✨ **About me** <br>
+## ✨ **About Me** <br>
 Hello, I'm Basti, a 20-year-old developer from Germany. <br>
-🎮 Gaming Since 2015 🕹️ | 💻 Programming Since 2017 🚀
+I find it fascinating that in development, you can create anything from nothing, and the only limit is your imagination! <br>
+🎮 Gaming since 2015 🕹️ | 💻 Programming since 2017 🚀
 <br>
 <br>
-## ✨ **My Jobs / Projects / Sites** <br>
-<a href="https://pixelvault.co">PixelVault </a> - Owner & Developer <br>
-<a href="https://luax.xyz">LuaX </a> - Owner <br>
-<a href="https://discord.gg/gka">Go-Karting Accelerator</a> (Roblox) - Vice President / Developer <br>
-<a href="https://yourdiscordbot.com">YourDiscordBot </a>- Owner | Discontinued <br>
-Discord Bots<br>
-APIs, Programs<br>
-And more... 
-<br>
-<br>
-## ✨ **Languages / Frameworks I use** <br>
-![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white) 
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) 
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white) 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
-![Rust](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) 
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) 
-![Bash](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) 
-![HTML](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-<br>
-<br>
-## ✨ **OS / Programs / Apps I use** <sub>(only a few of them)</sub> <br>
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Windows 11](https://img.shields.io/badge/Windows%2011-%230079d5.svg?style=for-the-badge&logo=Windows%2011&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-D70A53?style=for-the-badge&logo=debian&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
-![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
-![YouTube Music](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white)
-![Spotify](https://img.shields.io/badge/Spotify-1ED760?style=for-the-badge&logo=spotify&logoColor=white)
-![Shazam](https://img.shields.io/badge/shazam-1476FE?style=for-the-badge&logo=shazam&logoColor=white)
+## ✨ **My Top Projects** <br>
+- **[PixelVault](https://pixelvault.co)** – Owner & Developer
+- **[LuaX](https://luax.xyz)** – Owner
+- **[Go-Karting Accelerator](https://discord.gg/gka)** (Roblox) – Vice President / Developer
+- Discord Bots, APIs, programs, and other small projects
 
-![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
-![TeamSpeak](https://img.shields.io/badge/TeamSpeak-2580C3?style=for-the-badge&logo=teamspeak&logoColor=white)
-![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
-![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)
-![Skype](https://img.shields.io/badge/Skype-%2300AFF0.svg?style=for-the-badge&logo=Skype&logoColor=white)
-
-
-![Wireguard](https://img.shields.io/badge/wireguard-%2388171A.svg?style=for-the-badge&logo=wireguard&logoColor=white)
-![Xbox](https://img.shields.io/badge/Xbox-%23107C10.svg?style=for-the-badge&logo=Xbox&logoColor=white)
-![Grafana](https://img.shields.io/badge/grafana-%23F46800.svg?style=for-the-badge&logo=grafana&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
-![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white)
-![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
-![Pi-Hole](https://img.shields.io/badge/pihole-%2396060C.svg?style=for-the-badge&logo=pi-hole&logoColor=white)
-
-![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)
-![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)
-![Protonmail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)
-![Snapchat](https://img.shields.io/badge/Snapchat-%23FFFC00.svg?style=for-the-badge&logo=Snapchat&logoColor=white)
-![TikTok](https://img.shields.io/badge/TikTok-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white)
-![Twitch](https://img.shields.io/badge/Twitch-%239146FF.svg?style=for-the-badge&logo=Twitch&logoColor=white)
-
-![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white)
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white)
-<br> 
 <br>
+
+## ✨ **Skills / Technologies** 
+
+### Programming Languages
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40" alt="C#"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40" height="40" alt="Java"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" width="40" height="40" alt="Rust"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" width="40" height="40" alt="Lua"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" height="40" alt="PHP"/>
+</p>
+
+### Frameworks / Libraries
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="NodeJS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40" height="40" alt="Express.js"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" width="40" height="40" alt="Svelte"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind CSS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="40" height="40" alt="Bash"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg" width="40" height="40" alt="Discord.js"/>
+</p>
+
+### Databases
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="40" height="40" alt="MongoDB"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" width="40" height="40" alt="MariaDB"/>
+</p>
+
+### Cloud, DevOps & Design Tools
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="40" height="40" alt="AWS"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="40" height="40" alt="Figma"/>
+</p>
+
+### Operating Systems
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="40" height="40" alt="Windows"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain.svg" width="40" height="40" alt="Android"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" width="40" height="40" alt="Debian"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-original.svg" width="40" height="40" alt="Ubuntu"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" width="40" height="40" alt="Raspberry Pi"/>
+  <img src="https://github.com/Bastih18/Bastih18/raw/refs/heads/master/kali-linux.webp" width="40" height="40" alt="Kali Linux"/>
+</p>
+
+### IDE & Tools
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" height="40" alt="VSCode"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" width="40" height="40" alt="Visual Studio"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="40" height="40" alt="IntelliJ IDEA Ultimate"/>
+  <img src="https://resources.jetbrains.com/storage/products/datagrip/img/meta/datagrip_logo_300x300.png" width="40" height="40" alt="DataGrip"/>
+  <img src="https://resources.jetbrains.com/storage/products/rider/img/meta/rider_logo_300x300.png" width="40" height="40" alt="Rider"/>
+  <img src="https://mobaxterm.mobatek.net/img/moba/xterm_logo.png" width="40" height="40" alt="MobaXTerm"/>
+  <img src="https://winscp-static-746341.c.cdn77.org/assets/images/logos/logo.png?v=7034" width="40" height="40" alt="WinSCP"/>
+</p>
+
+<br>
+
+## ✨ **Hobbies** <br>
+In addition to programming, I enjoy:
+- 🎮 Gaming
+- 🧗‍♂️ Climbing
+- 🎶 Music
+
+<br>
+
 ## ✨ **Github Stats** <br>
 ![Github stats](https://github-readme-stats.vercel.app/api?username=bastih18&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=ffffff00&hide_title=true)
 <br> 
 <br>
-## ✨ **All Time Stats** <br>
+
+## ✨ **All-Time Stats** <br>
 <div>
 <img height="300" src="https://wakatime.com/share/@6b3736a7-e0cc-4eb6-a55d-291a11d4e484/c59ba575-a1f4-46da-a9f4-da4f43e34a1d.png" />
 </div>
